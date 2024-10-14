@@ -1,0 +1,19 @@
+process-timeout: 1h
+log:
+  format: text # text / json
+  level: debug # debug / info / warn / error
+aws:
+  access-key: <access_key>
+  secret: <secret_access_key>
+  region: ap-northeast-2
+  s3:
+    backup-bucket: webmemo
+backup:
+  prefix: backups/postgresql/
+  retention: 30d
+postgres:
+  host: localhost
+  port: 5432
+  user: admin
+  password: admin123123
+  database: my_service
