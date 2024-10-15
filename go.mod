@@ -1,4 +1,4 @@
-module github.com/isutare412/postgres-s3-dumper
+module github.com/isutare412/postgres-dumper
 
 go 1.23.0
 

@@ -8,7 +8,7 @@ import (
 	"slices"
 	"time"
 
-	"github.com/isutare412/postgres-s3-dumper/internal/core/port"
+	"github.com/isutare412/postgres-dumper/internal/core/port"
 )
 
 var regexPatternDateTime = regexp.MustCompile(`\d{14}`)

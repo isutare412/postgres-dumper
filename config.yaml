@@ -10,7 +10,7 @@ aws:
     backup-bucket: webmemo
 backup:
   prefix: backups/postgresql/
-  retention: 30d
+  retention: 720h # 30 days
 postgres:
   host: localhost
   port: 5432

@@ -5,9 +5,9 @@ import (
 	"log/slog"
 	"os"
 
-	"github.com/isutare412/postgres-s3-dumper/internal/config"
-	"github.com/isutare412/postgres-s3-dumper/internal/log"
-	"github.com/isutare412/postgres-s3-dumper/internal/wire"
+	"github.com/isutare412/postgres-dumper/internal/config"
+	"github.com/isutare412/postgres-dumper/internal/log"
+	"github.com/isutare412/postgres-dumper/internal/wire"
 )
 
 var configPath = flag.String("configs", ".", "path to config directory")

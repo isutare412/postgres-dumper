@@ -9,7 +9,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/isutare412/postgres-s3-dumper/internal/log"
+	"github.com/isutare412/postgres-dumper/internal/log"
 )
 
 const baseConfig = `

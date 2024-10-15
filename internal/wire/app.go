@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"log/slog"
 
-	"github.com/isutare412/postgres-s3-dumper/internal/aws"
-	"github.com/isutare412/postgres-s3-dumper/internal/backup"
-	"github.com/isutare412/postgres-s3-dumper/internal/config"
-	corebackup "github.com/isutare412/postgres-s3-dumper/internal/core/service/backup"
+	"github.com/isutare412/postgres-dumper/internal/aws"
+	"github.com/isutare412/postgres-dumper/internal/backup"
+	"github.com/isutare412/postgres-dumper/internal/config"
+	corebackup "github.com/isutare412/postgres-dumper/internal/core/service/backup"
 )
 
 type App struct {

@@ -8,7 +8,7 @@ import (
 	"os/exec"
 	"strconv"
 
-	"github.com/isutare412/postgres-s3-dumper/internal/core/model"
+	"github.com/isutare412/postgres-dumper/internal/core/model"
 )
 
 type Executor struct {

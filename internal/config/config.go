@@ -3,9 +3,9 @@ package config
 import (
 	"time"
 
-	"github.com/isutare412/postgres-s3-dumper/internal/aws"
-	"github.com/isutare412/postgres-s3-dumper/internal/core/service/backup"
-	"github.com/isutare412/postgres-s3-dumper/internal/log"
+	"github.com/isutare412/postgres-dumper/internal/aws"
+	"github.com/isutare412/postgres-dumper/internal/core/service/backup"
+	"github.com/isutare412/postgres-dumper/internal/log"
 )
 
 type Config struct {

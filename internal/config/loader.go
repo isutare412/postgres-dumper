@@ -12,7 +12,7 @@ import (
 	"github.com/knadh/koanf/providers/env"
 	"github.com/knadh/koanf/providers/file"
 
-	"github.com/isutare412/postgres-s3-dumper/internal/validate"
+	"github.com/isutare412/postgres-dumper/internal/validate"
 )
 
 var configFileNames = [...]string{

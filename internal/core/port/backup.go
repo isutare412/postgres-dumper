@@ -4,7 +4,7 @@ import (
 	"context"
 	"io"
 
-	"github.com/isutare412/postgres-s3-dumper/internal/core/model"
+	"github.com/isutare412/postgres-dumper/internal/core/model"
 )
 
 type BackupExecutor interface {
