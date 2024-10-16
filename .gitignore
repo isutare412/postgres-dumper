@@ -1,4 +1,5 @@
 /bin
 config.*.yaml
+/.env.local
 /coverage.out
 /coverage-report.txt
