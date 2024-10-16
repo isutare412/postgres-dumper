@@ -7,7 +7,7 @@ aws:
   secret: <secret_access_key>
   region: ap-northeast-2
   s3:
-    backup-bucket: webmemo
+    backup-bucket: redshore-devops
 backup:
   prefix: backups/postgresql/
   retention: 720h # 30 days
