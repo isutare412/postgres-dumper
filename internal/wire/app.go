@@ -33,19 +33,19 @@ func NewApp(cfg *config.Config) (*App, error) {
 	}, nil
 }
 
-func (a *App) Run() {
+func (a *App) Run() error {
 	ctx, cancel := context.WithTimeout(context.Background(), a.cfg.ProcessTimeout)
 	defer cancel()
 
 	if err := a.backupService.BackupDatabase(ctx); err != nil {
-		slog.Error("failed to backup database", "error", err)
-	} else {
-		slog.Info("backup database complete")
+		return fmt.Errorf("backup database: %w", err)
 	}
+	slog.Info("database backup completed successfully")
 
 	if err := a.backupService.PruneDatabaseBackups(ctx); err != nil {
-		slog.Error("failed to prune database backups", "error", err)
-	} else {
-		slog.Info("prune data backup complete")
+		return fmt.Errorf("pruning database backups: %w", err)
 	}
+	slog.Info("database backup pruning completed successfully")
+
+	return nil
 }

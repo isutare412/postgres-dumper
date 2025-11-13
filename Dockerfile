@@ -1,5 +1,5 @@
 # Build the app binary
-FROM golang:1.23 as builder
+FROM golang:1.23 AS builder
 
 WORKDIR /app
 
@@ -14,7 +14,9 @@ COPY internal/ internal/
 # Build
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -o server ./cmd/...
 
-FROM --platform=linux/amd64 bitnami/postgresql:17-debian-12
+FROM --platform=linux/amd64 postgres:18-trixie
+
+RUN apt-get update && apt-get install -y ca-certificates
 
 WORKDIR /app
 COPY --from=builder /app/server .
